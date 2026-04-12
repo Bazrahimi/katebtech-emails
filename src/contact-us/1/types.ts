@@ -14,8 +14,8 @@ export type SendEnquiryEmails = {
   enquiry: {
     fullName: string;
     email: string;
-    contactNumber: string | undefined;
-    qMessage?: string;
+    contactNumber?: string;
+    qMessage: string;
   };
   apiKey: string;
   orgInfo: OrgInfo;
