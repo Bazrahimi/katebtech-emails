@@ -2,14 +2,15 @@
   "name": "@katebtech/emails",
   "version": "0.1.0",
   "private": false,
+  "main": "./dist/index.js",
   "type": "module",
   "files": [
     "dist"
   ],
   "exports": {
-    "./contact/1": {
-      "types": "./dist/contact/1/index.d.ts",
-      "default": "./dist/contact/1/index.js"
+    "./contact-us/1": {
+      "types": "./dist/contact-us/1/index.d.ts",
+      "default": "./dist/contact-us/1/index.js"
     },
     "./package.json": "./package.json"
   },
@@ -33,10 +34,13 @@
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "@katebtech/core": "github:Bazrahimi/katebtech-core#main",
     "@react-email/components": "^0.5.7",
-    "@katebtech/core": "github:Bazrahimi/katebtech-core#main"
+    "resend": "^6.10.0"
   }
 }
