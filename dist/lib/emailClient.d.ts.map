@@ -1,0 +1,1 @@
+{"version":3,"file":"emailClient.d.ts","sourceRoot":"","sources":["../../src/lib/emailClient.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,QAAQ,CAAC;AAGhC,eAAO,MAAM,iBAAiB,GAAI,QAAQ,MAAM,WAE/C,CAAC;AAEF,eAAO,MAAM,cAAc,gDAA0C,CAAC;AACtE,eAAO,MAAM,WAAW,2CAAqC,CAAC"}
