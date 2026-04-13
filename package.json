@@ -39,7 +39,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@katebtech/core": "git+ssh://git@ssh.github.com/Bazrahimi/katebtech-core.git#main",
+    "@katebtech/core": "github:Bazrahimi/katebtech-core#main",
     "@react-email/components": "^0.5.7",
     "resend": "^6.10.0"
   }
