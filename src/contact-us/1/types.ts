@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 
+
 export type OrgInfo = {
   email: string;
   name: string;
