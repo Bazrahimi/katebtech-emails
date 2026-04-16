@@ -1,7 +1,7 @@
 "use server";
 import { jsx as _jsx } from "react/jsx-runtime";
 import { createEmailClient } from "../../../lib/emailClient";
-export const FROM_LITTLE_BAMIYAN = `Kateb Technology <handler@katebtech.com.au>`;
+const FROM_LITTLE_BAMIYAN = `Kateb Technology <handler@katebtech.com.au>`;
 import { BusinessApprovedEmailBody } from "./BusinessApprovedEmailBody";
 export const sendBusinessApprovedEmail = async (data) => {
     try {
