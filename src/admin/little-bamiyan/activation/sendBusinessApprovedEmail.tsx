@@ -2,7 +2,7 @@
 
 import { createEmailClient } from "../../../lib/emailClient";
 
-const FROM_LITTLE_BAMIYAN = `Kateb Technology <handler@katebtech.com.au>`;
+const FROM_LITTLE_BAMIYAN = `Little Bamiyan Directory <handler@katebtech.com.au>`;
 
 import { BusinessApprovedEmailBody } from "./BusinessApprovedEmailBody";
 
