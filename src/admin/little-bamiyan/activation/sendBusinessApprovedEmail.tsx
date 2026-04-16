@@ -1,6 +1,8 @@
 "use server";
 
-import { createEmailClient, FROM_KATEBTECH } from "../../../lib/emailClient";
+import { createEmailClient } from "../../../lib/emailClient";
+
+export const FROM_LITTLE_BAMIYAN = `Kateb Technology <handler@katebtech.com.au>`;
 
 import { BusinessApprovedEmailBody } from "./BusinessApprovedEmailBody";
 
@@ -11,7 +13,7 @@ export const sendBusinessApprovedEmail = async (data: SendActivationEmails) => {
     const emailClient = createEmailClient(data.apiKey);
 
     return await emailClient.emails.send({
-      from: FROM_KATEBTECH,
+      from: FROM_LITTLE_BAMIYAN,
       to: [data.businessActivation.email],
       replyTo: data.orgInfo.email,
       subject: `Your business listing has been approved – ${data.orgInfo.name}`,
