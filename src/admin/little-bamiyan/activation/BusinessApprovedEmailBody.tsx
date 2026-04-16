@@ -21,14 +21,14 @@ export const BusinessApprovedEmailBody = ({ data }: Props) => {
         now active on {data.orgInfo.name}.
       </Text>
 
-      {data.businessActivation.FullUrl ? (
+      {data.businessActivation.fullUrl ? (
         <>
           <Hr />
           <Text>
             You can view your listing here:
             <br />
-            <Link href={data.businessActivation.FullUrl}>
-              {data.businessActivation.FullUrl}
+            <Link href={data.businessActivation.fullUrl}>
+              {data.businessActivation.fullUrl}
             </Link>
           </Text>
         </>

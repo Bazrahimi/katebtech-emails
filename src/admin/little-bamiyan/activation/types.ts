@@ -4,7 +4,7 @@ export type SendActivationEmails = {
   businessActivation: {
     name: string;
     email: string;
-    FullUrl: string;
+    fullUrl: string;
   };
   apiKey: string;
   orgInfo: OrgInfo;
