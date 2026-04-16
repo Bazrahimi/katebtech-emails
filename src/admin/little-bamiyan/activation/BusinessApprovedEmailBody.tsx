@@ -1,6 +1,6 @@
 import { Hr, Link, Text } from "@react-email/components";
-import { EmailLayout } from "../../layout/EmailLayout";
-import { FROM_KATEBTECH } from "../../lib/emailClient";
+import { EmailLayout } from "../../../layout/EmailLayout";
+import { FROM_KATEBTECH } from "../../../lib/emailClient";
 import type { SendActivationEmails } from "./types";
 
 type Props = {

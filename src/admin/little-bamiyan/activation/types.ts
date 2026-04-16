@@ -1,4 +1,4 @@
-import type { OrgInfo } from "../../contact-us/1/types";
+import type { OrgInfo } from "../../../contact-us/1/types";
 
 export type SendActivationEmails = {
   businessActivation: {

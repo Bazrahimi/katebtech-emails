@@ -1,0 +1,1 @@
+export { sendActivationEmails } from "./sendActivationEmails";

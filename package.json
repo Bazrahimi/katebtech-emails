@@ -12,6 +12,10 @@
       "types": "./dist/contact-us/1/index.d.ts",
       "default": "./dist/contact-us/1/index.js"
     },
+    "./little-bamiyan": {
+      "types": "./dist/admin/little-bamiyan/index.d.ts",
+      "default": "./dist/admin/little-bamiyan/index.js"
+    },
     "./package.json": "./package.json"
   },
   "scripts": {

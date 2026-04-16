@@ -1,6 +1,6 @@
 "use server";
 
-import { createEmailClient, FROM_KATEBTECH } from "../../lib/emailClient";
+import { createEmailClient, FROM_KATEBTECH } from "../../../lib/emailClient";
 
 import { BusinessApprovedEmailBody } from "./BusinessApprovedEmailBody";
 
