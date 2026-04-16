@@ -7,5 +7,5 @@ export const EnquiryBody = ({ data, title, dontReplyNote = false, orgName, }) =>
                             fontSize: "12px",
                             color: "#6b7280",
                             lineHeight: "18px",
-                        }, children: [_jsx("strong", { children: "Note:" }), " Please do not reply to ", FROM_KATEBTECH, ", as this address is not monitored and replies may bounce back. This is an automated email sent from the website enquiry system. If you do not receive a response from ", orgName, ", please use the contact details provided in the footer below."] })] })) : null] }));
+                        }, children: [_jsx("strong", { children: "Note:" }), " Please do not reply to this email, as this is not monitored and replies may bounce back. This is an automated email sent from the website enquiry system. If you do not receive a response from ", orgName, ", please use the contact details provided in the footer below."] })] })) : null] }));
 };

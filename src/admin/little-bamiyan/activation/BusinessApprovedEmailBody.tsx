@@ -1,6 +1,5 @@
 import { Hr, Link, Text } from "@react-email/components";
 import { EmailLayout } from "../../../layout/EmailLayout";
-import { FROM_KATEBTECH } from "../../../lib/emailClient";
 import type { SendActivationEmails } from "./types";
 
 type Props = {
@@ -80,14 +79,19 @@ export const BusinessApprovedEmailBody = ({ data }: Props) => {
           lineHeight: "18px",
         }}
       >
-        <strong>Note:</strong> Please do not reply to {FROM_KATEBTECH}, as this
-        address is not monitored and replies may bounce back. This is an
-        automated email sent from the website enquiry system.
+        <strong>Note:</strong> Please do not reply to this email, as this is not
+        monitored and replies may bounce back. This is an automated email sent
+        from the system. please use the contact details provided in the footer
+        below.
       </Text>
 
-      <Text style={{ ...hzNoteStyle, direction: "rtl", textAlign: "right" }} dir="rtl">
-        لطفاَ به این پیام جواب مستقیم ندهید؛ چون یک این یک پیام خودکار از سیستم
-        کاتب تیک میباشد.
+      <Text
+        style={{ ...hzNoteStyle, direction: "rtl", textAlign: "right" }}
+        dir="rtl"
+      >
+        لطفاً به این پیام مستقیم جواب ندهید، چون ای یک پیام خودکار از سیستم
+        {data.orgInfo.orgNameFarsi} کاتب‌تِک می‌باشد. برای ارتباط مستقیم با ،
+        لطفاً معلومات تماسِ درست را در فوترِ پایین ببینید.
       </Text>
     </EmailLayout>
   );
