@@ -2,6 +2,9 @@
   "name": "@katebtech/emails",
   "version": "0.1.0",
   "private": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "main": "./dist/index.js",
   "type": "module",
   "files": [
@@ -42,7 +45,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@katebtech/core": "git+ssh://git@github.com/Bazrahimi/katebtech-core.git#main",
+    "@katebtech/core": "0.1.0",
     "@react-email/components": "^0.5.7",
     "resend": "^6.10.0"
   }
