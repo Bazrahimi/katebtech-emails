@@ -1,7 +1,8 @@
 {
   "name": "@katebtech/emails",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
+  "license": "UNLICENSED",
   "main": "./dist/index.js",
   "type": "module",
   "files": [
@@ -31,6 +32,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@katebtech/core": "0.1.0",
     "@types/node": "^25.5.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
