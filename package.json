@@ -1,13 +1,16 @@
 {
   "name": "@katebtech/emails",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "license": "UNLICENSED",
   "main": "./dist/index.js",
   "type": "module",
   "files": [
     "dist"
   ],
+   "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "exports": {
     "./contact-us/1": {
       "types": "./dist/contact-us/1/index.d.ts",
@@ -25,15 +28,17 @@
     "check": "pnpm typecheck && pnpm build",
     "clean": "rm -rf dist",
     "format": "prettier . --write",
-    "format:check": "prettier . --check"
+    "format:check": "prettier . --check",
+    "prepublishOnly": "pnpm check"
   },
   "peerDependencies": {
+      "@katebtech/core": "0.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@katebtech/core": "0.1.0",
-    "@types/node": "^25.5.2",
+     "@types/node": "^24.0.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "eslint-config-prettier": "^10.1.8",
