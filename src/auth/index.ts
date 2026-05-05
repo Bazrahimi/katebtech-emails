@@ -1,1 +1,1 @@
-export {EmailVerificationCode} from "./email-verification"
+export { EmailVerificationCode } from "./email-verification";
