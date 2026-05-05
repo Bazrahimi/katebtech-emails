@@ -4,14 +4,19 @@
   "private": false,
   "license": "UNLICENSED",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "files": [
     "dist"
   ],
-   "publishConfig": {
+  "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
     "./contact-us/1": {
       "types": "./dist/contact-us/1/index.d.ts",
       "default": "./dist/contact-us/1/index.js"
@@ -32,13 +37,13 @@
     "prepublishOnly": "pnpm check"
   },
   "peerDependencies": {
-      "@katebtech/core": "0.1.0",
+    "@katebtech/core": "0.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@katebtech/core": "0.1.0",
-     "@types/node": "^24.0.0",
+    "@types/node": "^24.0.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "eslint-config-prettier": "^10.1.8",
