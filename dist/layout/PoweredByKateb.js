@@ -22,11 +22,12 @@ export const PoweredByKateb = () => {
                         display: "inline-block",
                         fontSize: "11px",
                         color: "#ffffff",
-                        lineHeight: "16px",
+                        lineHeight: "18px",
                         margin: 0,
                         verticalAlign: "middle",
                     }, children: ["Powered by", " ", _jsx("span", { style: {
                                 color: "#f59e0b",
                                 fontWeight: 700,
+                                fontSize: "13px",
                             }, children: "Kateb Tech" })] })] }) }));
 };
