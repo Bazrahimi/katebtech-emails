@@ -1,5 +1,5 @@
-import { Img, Link, Section, Text } from "@react-email/components";
 import { KATEB_TECH_LOGO } from "@katebtech/core";
+import { Img, Link, Section, Text } from "@react-email/components";
 
 export const PoweredByKateb = () => {
   return (
@@ -16,16 +16,18 @@ export const PoweredByKateb = () => {
         target="_blank"
         style={{
           textDecoration: "none",
-          display: "inline-flex",
-          alignItems: "center",
-          justifyContent: "center",
+          display: "inline-block",
+          backgroundColor: "#0b3d2e",
+          borderRadius: "999px",
+          padding: "6px 12px",
+          border: "1px solid rgba(255, 255, 255, 0.16)",
         }}
       >
         <Img
           src={KATEB_TECH_LOGO}
-          width="20"
-          height="20"
-          alt="Kateb Tech"
+          width="18"
+          height="18"
+          alt="Kateb Tech logo"
           style={{
             display: "inline-block",
             verticalAlign: "middle",
@@ -35,17 +37,19 @@ export const PoweredByKateb = () => {
 
         <Text
           style={{
+            display: "inline-block",
             fontSize: "11px",
-            color: "#9ca3af",
+            color: "#ffffff",
             lineHeight: "16px",
             margin: 0,
+            verticalAlign: "middle",
           }}
         >
           Powered by{" "}
           <span
             style={{
               color: "#f59e0b",
-              fontWeight: 600,
+              fontWeight: 700,
             }}
           >
             Kateb Tech

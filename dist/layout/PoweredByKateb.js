@@ -1,6 +1,6 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { Img, Link, Section, Text } from "@react-email/components";
 import { KATEB_TECH_LOGO } from "@katebtech/core";
+import { Img, Link, Section, Text } from "@react-email/components";
 export const PoweredByKateb = () => {
     return (_jsx(Section, { style: {
             marginTop: "12px",
@@ -9,20 +9,24 @@ export const PoweredByKateb = () => {
             textAlign: "center",
         }, children: _jsxs(Link, { href: "https://www.katebtech.com.au", target: "_blank", style: {
                 textDecoration: "none",
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-            }, children: [_jsx(Img, { src: KATEB_TECH_LOGO, width: "20", height: "20", alt: "Kateb Tech", style: {
+                display: "inline-block",
+                backgroundColor: "#0b3d2e",
+                borderRadius: "999px",
+                padding: "6px 12px",
+                border: "1px solid rgba(255, 255, 255, 0.16)",
+            }, children: [_jsx(Img, { src: KATEB_TECH_LOGO, width: "18", height: "18", alt: "Kateb Tech logo", style: {
                         display: "inline-block",
                         verticalAlign: "middle",
                         marginRight: "6px",
                     } }), _jsxs(Text, { style: {
+                        display: "inline-block",
                         fontSize: "11px",
-                        color: "#9ca3af",
+                        color: "#ffffff",
                         lineHeight: "16px",
                         margin: 0,
+                        verticalAlign: "middle",
                     }, children: ["Powered by", " ", _jsx("span", { style: {
                                 color: "#f59e0b",
-                                fontWeight: 600,
+                                fontWeight: 700,
                             }, children: "Kateb Tech" })] })] }) }));
 };
